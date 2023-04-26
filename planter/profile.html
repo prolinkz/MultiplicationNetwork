@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>profile</title>
+  <title>Church Planter Profile</title>
   <!--favicon-->
   <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/x-icon">
       <!--Select Plugins-->
@@ -279,7 +279,7 @@
       <!-- Breadcrumb-->
      <div class="row pt-2 pb-2">
         <div class="col-sm-9">
-		    <h4 class="page-title">Profile</h4>
+		    <h4 class="page-title">Church Planter Profile</h4>
 		    
 	   </div>
 	   <div class="col-sm-3">
@@ -307,35 +307,50 @@
                 <div class="row mt-2">
                 <div class="col-12 md-6 pb-2">
                     <fieldset class="border p-2">
-                        <legend  class="w-auto text-uppercase"><small>Planter Profile</small> </legend>
+                        <legend  class="w-auto text-uppercase"><small>Profile</small> </legend>
                         <div class="row">
-                            <div class="col form-group">
+                            <div class="col form-group float">
                                 <div class="card-body">
                                     <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline">
-                                            <input class="form-control" type="text" required="" id="surname"placeholder="Enter SurName">
+                                            <input class="form-control" type="text" required="" id="surname" placeholder="Enter SurName">
                                             <label class="form-label" for="surname">SurName</label>
-        
-                                        </div><!---->
-                                    </div>
+                                        </div>
+                                    </div><!---->
                                     <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline">
-                                            <input class="form-control" type="text" required="" id="givenname"placeholder="Enter Given Name">
-                                            <label class="form-label" for="givenname">Given Name</label>
-                                        </div><!---->
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 mb-3 form-group float-left">
+                                          <input class="form-control" type="text" required="" id="givenname" placeholder="Enter Given Name">
+                                          <label class="form-label" for="givenname">Given Name</label>
+                                        </div>
+                                    </div><!---->
+                                    
+                                    <div class="col col-sm-12 col-md-4 xl-4 mb-3 form-group float-left">
+                                      <!-- <div class="icheck-material-primary icheck-inline">
+                                        <input type="radio" id="inline-radio-primary" name="gender" checked/>
+                                        <label for="inline-radio-primary">Male</label>
+                                      </div>
+                                      <div class="icheck-material-info icheck-inline">
+                                        <input type="radio" id="inline-radio-info" name="gender"/>
+                                        <label for="inline-radio-info">Female</label>
+                                      </div>
+                                      <div class="icheck-material-success icheck-inline">
+                                        <input type="radio" id="inline-radio-success" name="gender"/>
+                                        <label for="inline-radio-success">X-gender</label>
+                                      </div><br> -->
+
                                         <select class="form-control single-select">
                                             <option selected>Select Gender</option>
                                             <option value="0"><small>Male</small></option>                                    
                                             <option value="1"><small>Female</small></option>
                                             <option value="2"><small>Transgender</small></option>
                                         </select>
-                                        <label class="form-label select-label" for="">Gender</label>
+                                        <label class="form-label select-label" for="gender">Gender</label>
+
                                     </div><!---->
                                     
                                     <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline datepicker">
+                                          <label class="form-label select-label" for="dob">Dat of birth</label>
                                             <input class="form-control"  type="date" id="dob" name="dob" required="" aria-haspopup="dialog">
                                             <label class="form-label" for="dob">Date of Birth</label>
                                             <div class="invalid-feedback">Invalid date or date format</div>
@@ -355,19 +370,19 @@
         
                                 <div class="col-sm-12 col-md-4 mb-3 float-left">
                                     <div class="form-outline">
-                                        <input class="form-control" type="number" required="" id="" placeholder="Number of Childeren's">
-                                        <label class="form-label" for="">No. of Children's</label>
+                                        <input class="form-control" type="number" required="" id="childerns" placeholder="Number of Childeren's">
+                                        <label class="form-label" for="childerns">No. of Children's</label>
                                     </div>
                                 </div><!---->
                                 <div class="col-sm-12 col-md-4 mb-3 float-left">
                                     <div class="form-outline">
-                                        <input class="form-control" type="text" required="" id="phone"placeholder="Enter your phone number">
+                                        <input class="form-control" type="text" required="" id="phone" placeholder="Enter your phone number">
                                         <label class="form-label" for="phone">Phone#</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-4 mb-3 float-left">
                                     <div class="form-outline">
-                                        <input class="form-control" type="text" required="" id="whatsapp"placeholder="Enter your Whatsapp number">
+                                        <input class="form-control" type="text" required="" id="whatsapp" placeholder="Enter your Whatsapp number">
                                         <label class="form-label" for="whatsapp">WhatssApp Number</label>
                                     </div>
                                 </div>
@@ -380,7 +395,7 @@
                                 <div class="col-sm-12 col-md-4 mb-3 float-left">
                                     <div class="select-wrapper">
                                         <div class="form-outline">
-                                            <input class="form-control active select-input" placeholder="" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="country">
+                                            <input class="form-control active select-input" placeholder="Country" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="country">
                                             <label class="form-label select-label" for="country">Country</label>
                                         </div>
                                     </div>
@@ -401,6 +416,14 @@
                                         </div>
                                     </div>
                                 </div><!---->
+                                <div class="col-sm-12 col-md-4 mb-3 float-left">
+                                  <div class="select-wrapper">
+                                      <div class="form-outline">
+                                              <textarea rows="2" class="form-control" id="basic-textarea"></textarea>
+                                              <label for="basic-textarea" class="col col-form-label">Mailing/Postal Address</label>
+                                      </div>
+                                  </div>
+                              </div><!---->
 
                                 </div>   
                             </div>
@@ -605,11 +628,36 @@
               </div>
             </div>
       </div><!--End Row-->
-                 
+                 <!--Submission Buttons-->
                     <div>
                       <form>
-                        <button type="button" role="button" class="btn btn-danger waves-effect waves-light mt-2"><span>Cancel</span></button> &nbsp;&nbsp;
-                        <button type="submit" role="button" class="btn btn-primary mt-2"><span> Submit </span></button>
+                        <div class="col-4 col-lg-4 col-xl-2">
+                        <button type="button" role="button" class="btn btn-danger btn-block waves-effect waves-light mt-2"><span>Cancel</span></button> &nbsp;&nbsp;
+                        <!-- <button type="submit" role="button" class="btn btn-primary mt-2"><span> Submit </span></button> -->
+                        </div>
+                        <div class="col-4 col-lg-4 col-xl-2">
+                          <button type="submit" role="button" class="btn btn-info btn-block waves-effect mt-2" data-toggle="modal" data-target="#dangermodal">Submit</button>
+                          <div class="modal fade" id="dangermodal">
+                            <div class="modal-dialog">
+                              <div class="modal-content border-danger">
+                                <div class="modal-header bg-danger">
+                                  <h5 class="modal-title text-white">Are you sure want changes</h5>
+                                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>I hereby certify that the information entered here is true to the best of my knowledge.</p>
+                                  <p>In case of incorrect information I will be responsible for not receiving any information/alerts from Multiplication Network.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-dark" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                  <button type="button" class="btn btn-danger"><i class="fa fa-check-square-o"></i> Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!--End Modal -->
+                        </div>
                       </form>
                     </div>
                       
