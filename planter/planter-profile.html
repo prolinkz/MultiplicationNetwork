@@ -308,12 +308,25 @@
                                 </div><!---->
                             </div>
                             <div class="col-sm-12 col-md-4 mb-3 form-group">
-                                <select class="form-control single-select">
+                                <!-- <select class="form-control single-select">
                                     <option selected>Select Gender</option>
                                     <option value="0">Male</option>                                    
                                     <option value="1">Female</option>
                                     <option value="2">Transgender</option>
-                                </select>
+                                </select> -->
+
+                                      <div class="icheck-material-primary icheck-inline">
+                                        <input type="radio" id="inline-radio-primary" name="gender" checked/>
+                                        <label for="inline-radio-primary">Male</label>
+                                      </div>
+                                      <div class="icheck-material-info icheck-inline">
+                                        <input type="radio" id="inline-radio-info" name="gender"/>
+                                        <label for="inline-radio-info">Female</label>
+                                      </div>
+                                      <div class="icheck-material-success icheck-inline">
+                                        <input type="radio" id="inline-radio-success" name="gender"/>
+                                        <label for="inline-radio-success">X-gender</label>
+                                      </div>
                                 <label class="form-label select-label" for="">Gender</label>
                             </div><!---->      
                             <div class="col-sm-12 col-md-4 mb-3">
@@ -385,10 +398,10 @@
                                    </div>
                                 </div><!---->
                             </div>
-                            <hr width="85%">
+                            <hr class="hr" width="85%" size="10">
 
-                        <div class="col-sm-12 col-md-12 mb-3">
-                            <h5>Information where new church will be planted</h5>
+                        <div class="col-sm-12 col-md-12 mt-4 mb-3">
+                            <h5>Information Where New Church Will Be Planted</h5>
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="form-outline">
@@ -418,7 +431,10 @@
                                     class="form-label" for="cpcity">City</label>
                             </div><!---->
                         </div>
-                        <div class="col-sm-12 col-md-12 mb-3">
+
+                        <hr class="hr mb-3" width="85%" size="10">
+
+                        <div class="col-sm-12 col-md-12 pt-4">
                             <h5>INFORMATION OF THE MOTHER CHURCH</h5>
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
@@ -457,47 +473,6 @@
                             </div>
                         </div><!---->
 
-                        <div class="row">
-                            <div class="col-lg-6">
-                              <div class="card">
-                                <div class="card-header text-uppercase text-white border-bottom" style="background-color: rgb(43, 103, 216);">Prayer Request <br>
-                                  <small>Enter 3 Prayer Requests </small>
-                                </div>
-                                     
-                                <div class="card-body">
-                                  <form>
-                                    <small> Prayer Request 1</small>
-                                    <label for="request1"> </label>
-                                    <input type="text" class="form-control" id="request1" placeholder="Enter Prayer Request 1">
-                                    <h4 class="border-bottom"></h4>
-                                    <small> Prayer Request 2</small>
-                                    <label for="request2"> </label>
-                                    <input type="text" class="form-control" id="request2" placeholder="Enter Prayer Request 2">
-                                    <h4 class="border-bottom"></h4>
-                                    <small> Prayer Request 3</small>
-                                    <label for="request3"> </label>
-                                    <input type="text" class="form-control" id="request3" placeholder="Enter Prayer Request 3">
-                                  </form>
-                                 </div>
-                              </div>
-                             </div>
-                              <div class="col-lg-6 mb-3">
-                                <div class="card">
-                                  <div class="card-header text-uppercase text-white" style="background-color: rgb(43, 103, 216);">Testimony<br>
-                                  <small>Entry Your Testimony</small>
-                                  </div>
-                                  <div class="card-body">
-                                      <form>
-                                          <label for="basic-textarea" class="col col-form-label">Minimum 3 Lines are required *</label>
-                                          <div class="col">
-                                              <textarea rows="6" class="form-control" id="basic-textarea"></textarea>
-                                          </div>
-                                      </form>
-                              
-                                  </div>
-                                </div>
-                              </div>
-                        </div><!--End Row-->
 
 
                         <!-- <div class="d-flex justify-content-end">
@@ -509,7 +484,9 @@
                 </div>
             </div>
             </div>
-
+</form>
+</div>
+</div>
 
     <!--start overlay-->
 	  <div class="overlay toggle-menu"></div>
