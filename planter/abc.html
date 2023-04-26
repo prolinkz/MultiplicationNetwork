@@ -332,21 +332,35 @@
                         <div class="col form-group">
                             <div class="card-body">
                                 <small> Select ABC report Month</small>
-                                <label for="provideragency"> </label>
+                                <label for=""> </label>
                                           <input type="month" class="form-control" id="reportMonth" placeholder="" required>
                                           <h4 class="border-bottom pb-4"></h4><br />
-                                          <p class="mb-2 pt-2">Mentoring Meeting Attended?</p>
-                                          <div class="form-check pl-4 pt-3 pb-2">
-                                              <input class="form-check-input width:22" type="radio" name="yes" id="yes" value="1" required>
-                                              <label class="form-check-label" for="yes">
-                                                  Yes   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                              </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                              <input class="form-check-input" type="radio" name="" id="no" value="0" required>
-                                              <label class="form-check-label" for="no">
-                                                  No
-                                              </label>
-                                          </div>
-                                        </div>   
+                                          <p class="text-dark mb-2 pt-2">Mentoring Meeting Attended?</p>
+                                         
+                                          <div class="col-sm-12 col-md-4 mb-3 form-group">
+            
+                                                  <div class="icheck-material-success icheck-inline">
+                                                    <input type="radio" id="inline-radio-primary" name="gender" checked/>
+                                                    <label for="inline-radio-primary">Yes</label>
+                                                  </div>
+                                                  <div class="icheck-material-danger icheck-inline">
+                                                    <input type="radio" id="inline-radio-info" name="gender"/>
+                                                    <label for="inline-radio-info">No</label>
+                                                  </div>
+
+                                            </div><!---->     
+
+                                          <!-- <div class="form-check pl-4 pt-3 pb-2">
+                                            <div class="icheck-material-primary icheck-inline">
+                                              <input type="radio" id="inline-radio-primary" name="yes" checked/>
+                                              <label for="inline-radio-primary">Yes</label>
+                                            </div>
+                                            <div class="icheck-material-info icheck-inline">
+                                              <input type="radio" id="inline-radio-info" name="no"/>
+                                              <label for="inline-radio-info">No</label>
+                                            </div>
+                                          </div> -->
+                              </div>   
                           </div>
                   </fieldset>
               </div>
@@ -383,13 +397,13 @@
                             </th>
                             <td>
                                 <div class="form-group mb-2 mt-2">
-                                    <input class="form-control" type="number" required="required" id="" placeholder="Monthly Goal">
+                                    <input class="form-control" type="number" required="required" id="" placeholder="Monthly Goal" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                   
                                 </div>
                             </td>
                             <td>
                                 <div class="form-outline mt-2 mb-2">
-                                    <input class="form-control" type="number" required="required" id=""  placeholder="Monthly Result">
+                                    <input class="form-control" type="number" required="required" id=""  placeholder="Monthly Result" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                    
                                 </div>
                             </td>
@@ -398,13 +412,13 @@
                             <th style="background-color: rgb(185, 185, 185);"> NEW CONVERSIONS <br><small>Followers of Jesus </small></th>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="" placeholder="Monthly Goal">
+                                        required="" id="" placeholder="Monthly Goal" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                     
                                 </div>
                             </td>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="" placeholder="Monthly Result">
+                                        required="" id="" placeholder="Monthly Result" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                   
                                 </div>
                             </td>
@@ -414,13 +428,13 @@
                             </th>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="MDBInput-911365" placeholder="Monthly Goal">
+                                        required="" id="MDBInput-911365" placeholder="Monthly Goal" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                     
                                 </div>
                             </td>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="MDBInput-793710" placeholder="Monthly Result">
+                                        required="" id="MDBInput-793710" placeholder="Monthly Result" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                     
                                 </div>
                             </td>
@@ -467,12 +481,12 @@
                             <th style="background-color: rgb(185, 185, 185);"> NEW SMALL GROUPS <br><small>Group initiated this month </small></th>
                             <td>
                                 <div class="form-group mb-2 mt-2">
-                                    <input class="form-control" type="number" required="required" id="" placeholder="Monthly Goal">
+                                  <input class="form-control" type="number" required="required" id="" placeholder="Monthly Goal" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                 </div>
                             </td>
                             <td>
-                                <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id=""  placeholder="Monthly Result">
+                                <div class="form-outline mt-2 mb-2">
+                                  <input class="form-control" type="number" required="required" id="" placeholder="Monthly Result" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                    
                                 </div>
                             </td>
@@ -481,13 +495,13 @@
                             <th style="background-color: rgb(185, 185, 185);"> NEW PARTICIPANTS IN SMALL GROUPS <br><small>New people participating in small groups this month </small></th>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="" placeholder="Monthly Goal">
+                                        required="required" id="" placeholder="Monthly Goal" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                     
                                 </div>
                             </td>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="" placeholder="Monthly Result">
+                                        required="" id="" placeholder="Monthly Result" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                   
                                 </div>
                             </td>
@@ -498,12 +512,12 @@
                             </th>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="required" id="" placeholder="Monthly Goal">
+                                        required="required" id="" placeholder="Monthly Goal" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-outline mt-2 mb-2"><input class="form-control" type="number"
-                                        required="" id="" placeholder="Monthly Result">
+                                        required="" id="" placeholder="Monthly Result" min="0" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                                     
                                 </div>
                             </td>
