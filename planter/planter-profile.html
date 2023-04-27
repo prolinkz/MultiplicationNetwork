@@ -398,7 +398,7 @@
                                    </div>
                                 </div><!---->
                             </div>
-                            <hr class="hr" width="85%" size="10">
+                            <hr class="hr" width="85%" size="10" color="#02ba5a">
 
                         <div class="col-sm-12 col-md-12 mt-4 mb-3">
                             <h5>Information Where New Church Will Be Planted</h5>
@@ -431,8 +431,13 @@
                                     class="form-label" for="cpcity">City</label>
                             </div><!---->
                         </div>
+                        <div class="col-sm-12 col-md-12 mb-3">
+                          <div class="form-outline"><input class="form-control" type="text" required="" id="mcaddress"><label
+                                  class="form-label" for="mcaddress">Address</label>
+                          </div>
+                        </div>
 
-                        <hr class="hr mb-3" width="85%" size="10">
+                        <hr class="hr mb-3" width="85%" size="10" color="#02ba5a">
 
                         <div class="col-sm-12 col-md-12 pt-4">
                             <h5>INFORMATION OF THE MOTHER CHURCH</h5>
@@ -487,6 +492,86 @@
 </form>
 </div>
 </div>
+
+
+<div class="row justify-content-around"> 
+  <div class="col-lg-6"> <!--Prayer Request col Start-->
+    <div class="card">
+      <div class="card-header text-uppercase text-white border-bottom" style="background-color: rgb(43, 103, 216);">Prayer Request <br>
+        <small>Enter 3 Prayer Requests </small>
+      </div>
+           
+      <div class="card-body">
+        <form>
+          <small> Prayer Request 1</small>
+          <label for="request1"> </label>
+          <input type="text" class="form-control" id="request1" placeholder="Enter Prayer Request 1">
+          <h4 class="border-bottom"></h4>
+          <small> Prayer Request 2</small>
+          <label for="request2"> </label>
+          <input type="text" class="form-control" id="request2" placeholder="Enter Prayer Request 2">
+          <h4 class="border-bottom"></h4>
+          <small> Prayer Request 3</small>
+          <label for="request3"> </label>
+          <input type="text" class="form-control" id="request3" placeholder="Enter Prayer Request 3">
+        </form>
+       </div>
+    </div>
+   </div> <!-- End Prayer Request col-->
+    <div class="col-lg-6"> <!-- Start Tetimony col-->
+      <div class="card">
+        <div class="card-header text-uppercase text-white" style="background-color: rgb(43, 103, 216);">Testimony<br>
+        <small>Entry Your<b> Testimony</b></small>
+        </div>
+        <div class="card-body">
+            <form>
+                <small> How was your life before accepting Christ?</small>
+                <label for="testimony1"> </label>
+                <input type="text" class="form-control" id="testimony1" placeholder="Answer Here">
+                <h4 class="border-bottom"></h4>
+                <small> How did you meet Christ?</small>
+                <label for="testimony2"> </label>
+                <input type="text" class="form-control" id="testimony2" placeholder="Answer Here">
+                <h4 class="border-bottom"></h4>
+                <small> How were you called to church planting?</small>
+                <label for="testimony3"> </label>
+                <input type="text" class="form-control" id="testimony3" placeholder="Answer Here">
+              </form>
+    
+        </div>
+      </div>
+    </div><!-- End Tetimony col-->
+</div><!--End Row-->
+         <!--Start Submission Buttons-->
+
+            
+           <div class="row justify-content-around mb-4 mt-3">
+              
+            <div class="col-12 col-lg-4 col-xl-2">
+              <!--Danger Modal -->
+                       <button class="btn btn-danger btn-block waves-effect m-1" data-toggle="modal" data-target="#submit">Submit</button>
+                        <div class="modal fade" id="submit">
+                          <div class="modal-dialog">
+                            <div class="modal-content border-danger">
+                              <div class="modal-header bg-danger">
+                                <h5 class="modal-title text-white">Are you sure, you want changes!</h5>
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>I hereby certify that the information entered here is true to the best of my knowledge.</p>
+                                <p>In case of incorrect information I will be responsible for not receiving any information/alerts from Multiplication Network.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-check-square-o"></i> Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--End Modal -->
+            </div>
+          </div>
 
     <!--start overlay-->
 	  <div class="overlay toggle-menu"></div>
