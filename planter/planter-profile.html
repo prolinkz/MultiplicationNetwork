@@ -307,7 +307,7 @@
                                     <label class="form-label" for="givenname">Given Name</label>
                                 </div><!---->
                             </div>
-                            <div class="col-sm-12 col-md-4 mb-3 form-group">
+                            <div class="col-sm-12 col-md-4 mb-3 form-group mt-1">
                                 <!-- <select class="form-control single-select">
                                     <option selected>Select Gender</option>
                                     <option value="0">Male</option>                                    
@@ -316,7 +316,7 @@
                                 </select> -->
 
                                       <div class="icheck-material-primary icheck-inline">
-                                        <input type="radio" id="inline-radio-primary" name="gender" checked/>
+                                        <input type="radio" id="inline-radio-primary" name="gender"/>
                                         <label for="inline-radio-primary">Male</label>
                                       </div>
                                       <div class="icheck-material-info icheck-inline">
@@ -327,7 +327,7 @@
                                         <input type="radio" id="inline-radio-success" name="gender"/>
                                         <label for="inline-radio-success">X-gender</label>
                                       </div>
-                                <label class="form-label select-label" for="">Gender</label>
+                                <label class="form-label select-label mt-1" for="gender">Gender</label>
                             </div><!---->      
                             <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="form-outline datepicker">
@@ -373,6 +373,66 @@
                                 <label class="form-label" for="age">Age</label>
                             </div>
                         </div>
+
+                        <div class="form-group col-sm-12 col-md-4 mb-3">
+                          <select class="form-control single-select">
+                              <option default>Select Country</option>
+                              <option value="0">USA</option>                                    
+                              <option value="1">Canada</option>
+                              <option value="2">Spain</option>
+                              <option value="2">Germany</option>
+                          </select>
+                          <label class="form-label select-label" for="churchcountry">Country</label>
+ 
+                            <!-- <div class="col-sm-12 col-md-4 mb-3">
+                            <div class="form-outline"><input class="form-control" type="text" id="cpcountry"><label
+                                    class="form-label" for="cpcountry">Country</label>
+                            </div> -->
+                        </div><!--End Church Country-->
+                        <div class="form-group col-sm-12 col-md-4 mb-3">
+                          <select class="form-control single-select">
+                              <option default>Select State</option>
+                              <option value="0">1</option>                                    
+                              <option value="1">2</option>
+                              <option value="2">3</option>
+                              <option value="2">4</option>
+                          </select>
+                          <label class="form-label select-label" for="churchstate">State</label>
+
+                        </div> <!--End church State-->
+
+                        <div class="col-sm-12 col-md-4 mb-3">
+                            <div class="form-outline"><input class="form-control" type="text" id="churchcity"><label
+                                    class="form-label" for="cpcity">City</label>
+                            </div>
+                        </div><!--End Church City-->
+
+
+
+
+                            <hr class="hr" width="85%" size="10" color="#02ba5a">
+
+                        <div class="col-sm-12 col-md-12 mt-4 mb-3">
+                            <h5>Information Where New Church Will Be Planted</h5>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-3">
+                            <div class="form-outline">
+                                <input class="form-control" type="text" required="" id="churchname">
+                                <label class="form-label" for="churchname">Church Name</label>
+
+                            </div><!--End Church Name-->
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-4 mb-3">
+                          <select class="form-control single-select">
+                              <option default>Select Denomination</option>
+                              <option value="0">1</option>                                    
+                              <option value="1">2</option>
+                              <option value="2">3</option>
+                              <option value="2">4</option>
+                          </select>
+                          <label class="form-label select-label" for="denomination">Denomination</label>
+                        </div><!--End Church Denomination-->
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="select-wrapper">
                                 <div class="form-outline">
@@ -388,7 +448,7 @@
                                     <label class="form-label select-label" for="state">State</label>
                                 </div>
                             </div>
-                        </div><!---->
+                        </div>    
 
                             <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="select-wrapper">
@@ -396,44 +456,12 @@
                                     <input class="form-control select-input" placeholder="No options available" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="city">
                                     <label class="form-label select-label" for="city">City</label>
                                    </div>
-                                </div><!---->
+                                </div>
                             </div>
-                            <hr class="hr" width="85%" size="10" color="#02ba5a">
 
-                        <div class="col-sm-12 col-md-12 mt-4 mb-3">
-                            <h5>Information Where New Church Will Be Planted</h5>
-                        </div>
-                        <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline">
-                                <input class="form-control" type="text" required="" id="churchname">
-                                <label class="form-label" for="churchname">Name</label>
-
-                            </div><!---->
-                        </div>
-
-                        <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" disabled="" id="cpdenomination">
-                                <label class="form-label" for="cpdenomination">Denomination</label>
-                            </div><!---->
-                        </div>
-                        <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" disabled="" id="cpcountry"><label
-                                    class="form-label" for="cpcountry">Country</label>
-                            </div><!---->
-                        </div>
-                        <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" disabled="" id="cpstate"><label
-                                    class="form-label" for="cpstate">State</label>
-                             </div><!---->
-                        </div>
-                        <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" disabled="" id="cpcity"><label
-                                    class="form-label" for="cpcity">City</label>
-                            </div><!---->
-                        </div>
                         <div class="col-sm-12 col-md-12 mb-3">
                           <div class="form-outline"><input class="form-control" type="text" required="" id="mcaddress"><label
-                                  class="form-label" for="mcaddress">Address</label>
+                                  class="form-label" for="mcaddress">Postal/Mailing Address</label>
                           </div>
                         </div>
 
@@ -467,14 +495,15 @@
                                     class="form-label" for="mcphone">Phone</label>
                             </div>
                         </div><!---->
-                        <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="email" required="" id="mcemail"><label
-                                    class="form-label" for="mcemail">Email</label>
-                            </div>
-                        </div><!---->
+                        
+                        <div class="form-group col-sm-12 col-md-4 mb-3">
+                          <input id="email" name="email" type="text" class="required email form-control">
+                          <label for="mcemail">email </label>
+                      </div>
                         <div class="col-sm-12 col-md-12 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" required="" id="mcaddress"><label
-                                    class="form-label" for="mcaddress">Address</label>
+                            <div class="form-outline">
+                              <input class="required form-control" type="text" id="mcaddress">
+                              <label class="form-label" for="mcaddress">Address</label>
                             </div>
                         </div><!---->
 
