@@ -30,18 +30,18 @@
 
                   swal({
                     title: "Are you sure?",
-                    text: "Once deleted, you will not be able to recover this imaginary file!",
+                    text: "Make sure, you enter the valid information. Once saved, you will not be able to edit or deleted.",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
                   })
                   .then((willDelete) => {
                     if (willDelete) {
-                      swal("Poof! Your imaginary file has been deleted!", {
+                      swal("Great Work! Your monthly ABC report has been saved!", {
                         icon: "success",
                       });
                     } else {
-                      swal("Your imaginary file is safe!");
+                      swal("Cancelled, Submit again with accurate monthly result!");
                     }
                   });
 

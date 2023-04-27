@@ -24,6 +24,8 @@
   <link href="../assets/css/app-style.css" rel="stylesheet"/>
   <!-- skins CSS-->
   <link href="../assets/css/skins.css" rel="stylesheet"/>
+        <!--Select Plugins-->
+        <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
   
 </head>
 
@@ -296,14 +298,14 @@
                             </div> -->
                             <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="form-outline">
-                                    <input class="form-control" type="text" required="" id="surname">
+                                    <input class="form-control required" type="text" id="surname" placeholder="Enter Your Surname">
                                     <label class="form-label" for="surname">SurName</label>
 
                                 </div><!---->
                             </div>
                             <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="form-outline">
-                                    <input class="form-control" type="text" required="" id="givenname">
+                                    <input class="form-control required" type="text" id="givenname" placeholder="Enter your Given name">
                                     <label class="form-label" for="givenname">Given Name</label>
                                 </div><!---->
                             </div>
@@ -331,13 +333,13 @@
                             </div><!---->      
                             <div class="col-sm-12 col-md-4 mb-3">
                                 <div class="form-outline datepicker">
-                                    <input class="form-control"  type="date" id="dob" name="dob" required="" aria-haspopup="dialog">
+                                    <input class="form-control required"  type="date" id="dob" name="dob" aria-haspopup="dialog" placeholder="Select your Date of Birth">
                                     <label class="form-label" for="dob">Date of Birth</label>
                                     <div class="invalid-feedback">Invalid date or date format</div>
                                 </div>
                             </div><!--dob end-->      
                             <div class="col-sm-12 col-md-4 mb-3 form-group">
-                                <select class="form-control single-select">
+                                <select class="form-control required single-select">
                                     <option selected>Select option</option>
                                     <option value="0">Unmarried</option>                                    
                                     <option value="1">Married</option>
@@ -350,32 +352,32 @@
 
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="form-outline">
-                                <input class="form-control" type="number" required="" id="">
-                                <label class="form-label" for=""># of Children</label>
+                                <input class="form-control required" type="number" id="childerens">
+                                <label class="form-label" for="childerens"># of Children's</label>
                         </div><!---->
                     </div>
                         
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="form-outline">
-                                <input class="form-control" type="text" required="" id="phone">
+                                <input class="form-control required" type="text" id="phone" placeholder="Enter your contact number">
                                 <label class="form-label" for="phone">Phone#</label>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="form-outline">
-                                <input class="form-control" type="text" required="" id="whatsapp">
+                                <input class="form-control required" type="text" id="whatsapp" placeholder="Enter your WhatsApp number">
                                 <label class="form-label" for="whatsapp">WhatssApp Number</label>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="form-outline">
-                                <input class="form-control" type="number" required="" id="age">
+                                <input class="form-control" type="number" id="age" disabled/>
                                 <label class="form-label" for="age">Age</label>
                             </div>
                         </div>
 
                         <div class="form-group col-sm-12 col-md-4 mb-3">
-                          <select class="form-control single-select">
+                          <select class="form-control required single-select">
                               <option default>Select Country</option>
                               <option value="0">USA</option>                                    
                               <option value="1">Canada</option>
@@ -390,7 +392,7 @@
                             </div> -->
                         </div><!--End Church Country-->
                         <div class="form-group col-sm-12 col-md-4 mb-3">
-                          <select class="form-control single-select">
+                          <select class="form-control required single-select">
                               <option default>Select State</option>
                               <option value="0">1</option>                                    
                               <option value="1">2</option>
@@ -402,8 +404,9 @@
                         </div> <!--End church State-->
 
                         <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" id="churchcity"><label
-                                    class="form-label" for="cpcity">City</label>
+                            <div class="form-outline required">
+                              <input class="form-control" type="text" id="churchcity">
+                              <label class="form-label" for="cpcity">City</label>
                             </div>
                         </div><!--End Church City-->
 
@@ -417,7 +420,7 @@
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="form-outline">
-                                <input class="form-control" type="text" required="" id="churchname">
+                                <input class="form-control required" type="text" id="churchname" placeholder="Your New Church Name">
                                 <label class="form-label" for="churchname">Church Name</label>
 
                             </div><!--End Church Name-->
@@ -436,7 +439,7 @@
                         <div class="col-sm-12 col-md-4 mb-3">
                             <div class="select-wrapper">
                                 <div class="form-outline">
-                                    <input class="form-control active select-input" placeholder="" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="country">
+                                    <input class="form-control active select-input" placeholder="No option available" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="country">
                                     <label class="form-label select-label" for="country">Country</label>
                                 </div>
                             </div>
@@ -460,8 +463,9 @@
                             </div>
 
                         <div class="col-sm-12 col-md-12 mb-3">
-                          <div class="form-outline"><input class="form-control" type="text" required="" id="mcaddress"><label
-                                  class="form-label" for="mcaddress">Postal/Mailing Address</label>
+                          <div class="form-outline">
+                            <input class="form-control required" type="text" id="mcaddress" placeholder="Enter your Postal or Mailing address">
+                            <label class="form-label" for="mcaddress">Postal/Mailing Address</label>
                           </div>
                         </div>
 
@@ -471,38 +475,38 @@
                             <h5>INFORMATION OF THE MOTHER CHURCH</h5>
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" required="" id="mcname"><label
+                            <div class="form-outline"><input class="form-control required" type="text" id="mcname" placeholder="Enter Mother Church name"><label
                                     class="form-label" for="mcname">Name</label>
                             </div><!---->
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" required="" id="neighborhood"><label
-                                    class="form-label" for="neighborhood">Neighborhood</label>
+                            <div class="form-outline"><input class="form-control required" type="text" id="neighbourhood" placeholder="Neighbourhood"><label
+                                    class="form-label" for="neighbourhood">Neighbourhood</label>
                             </div><!---->
                         </div>
                         <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" required="" id="pastor"><label
+                            <div class="form-outline"><input class="form-control required" type="text" id="pastor" placeholder="Church Pastor's name"><label
                                     class="form-label" for="pastor">Pastor's Name</label>
                             </div>
                         </div><!---->
                         <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" required="" id="mentor"><label
+                            <div class="form-outline"><input class="form-control required" type="text" id="mentor" placeholder="Enter Mentor name"><label
                                     class="form-label" for="mentor">Mentor's Name</label>
                             </div>
                         </div><!---->
                         <div class="col-sm-12 col-md-4 mb-3">
-                            <div class="form-outline"><input class="form-control" type="text" required="" id="mcphone"><label
+                            <div class="form-outline"><input class="form-control required" type="text" id="mcphone" placeholder="Enter Mother Church Phone number"><label
                                     class="form-label" for="mcphone">Phone</label>
                             </div>
                         </div><!---->
                         
                         <div class="form-group col-sm-12 col-md-4 mb-3">
-                          <input id="email" name="email" type="text" class="required email form-control">
-                          <label for="mcemail">email </label>
+                          <input id="email" name="email" type="text" class="required email form-control" placeholder="Enter Mother Church Email address">
+                          <label for="mcemail">Email </label>
                       </div>
                         <div class="col-sm-12 col-md-12 mb-3">
                             <div class="form-outline">
-                              <input class="required form-control" type="text" id="mcaddress">
+                              <input class="required form-control" type="text" id="mcaddress" placeholder="Enter Mother Church Full address">
                               <label class="form-label" for="mcaddress">Address</label>
                             </div>
                         </div><!---->
@@ -682,6 +686,17 @@
   
   <!-- Custom scripts -->
   <script src="../assets/js/app-script.js"></script>
+
+        <!--Select Plugins Js-->
+        <script src="../assets/plugins/select2/js/select2.min.js"></script>
+        <script>
+          $(document).ready(function() {
+              $('.single-select').select2();
+        
+              $('.multiple-select').select2();
+          });
+      
+      </script>
 	
 </body>
 
