@@ -43,7 +43,7 @@
   <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
-      <a href="index-2.html">
+      <a href="../index.html">
        <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Admin Profile</h5>
      </a>
@@ -371,18 +371,29 @@
         <div class="row">
         <div class="col-12 col-lg-8 col-xl-8">
            <div class="card">
-            <div class="card-header">ABC Report's status
-          
-            </div>
+            <div class="card-header">ABC Report's status </div>
             <div class="card-body">
-               <ul class="list-inline">
-                 <li class="list-inline-item"><i class="fa fa-circle mr-2" style="color: #14abef"></i>Submit</li>
-                 <li class="list-inline-item"><i class="fa fa-circle mr-2" style="color: #ade2f9"></i>Not Submitted</li>
-               </ul>
-               <div class="chart-container-1">
-                 <canvas id="chart1"></canvas>
-               </div>
-            </div>
+              <div class="row">
+                <div class="col-lg-6 col-xl-6">
+                  <div class="card">
+                    <div class="card-header text-uppercase">Line chart</div>
+                   <div class="card-body">
+                         <canvas id="lineChart"></canvas>
+                     </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                  <div class="card">
+                    <div class="card-header text-uppercase">Bar Chart</div>
+                    <div class="card-body">
+                      <canvas id="barChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End Row-->
+
+
+            </div> <!--End Card body-->
             
             <div class="row m-0 row-group text-center border-top border-light-3">
               <div class="col-12 col-lg-4">
@@ -412,28 +423,33 @@
            <div class="card">
               <div class="card-header">Result
                 
-              <div class="card-body">
+              <!-- <div class="card-body">
                  <div class="chart-container-2">
                     <canvas id="chart2"></canvas>
                  </div>
-              </div>
-              <div class="table-responsive">
+              </div> -->
+              <div class="table-responsive mt-4">
                 <table class="table align-items-center">
                   <tbody>
                     <tr>
-                      <td><i class="fa fa-circle mr-2" style="color: #14abef"></i> Contacts</td>
+                      <td><i class="fa fa-circle mr-2" style="color: #14abef"></i> Planter's</td>
                       <td>0</td>
                     </tr>
                     <tr>
-                      <td><i class="fa fa-circle mr-2" style="color: #02ba5a"></i>Conversion</td>
+                      <td><i class="fa fa-circle mr-2" style="color: #02ba5a"></i>Completed</td>
                       <td>0</td>
                     </tr>
                     <tr>
-                      <td><i class="fa fa-circle mr-2" style="color: #d13adf"></i>Baptized</td>
+                      <td><i class="fa fa-circle mr-2" style="color: #d13adf"></i>Graduated</td>
                       <td>0</td>
                     </tr>
                     <tr>
-                      <td><i class="fa fa-circle mr-2" style="color: #fba540"></i>Leaders</td>
+                      <td><i class="fa fa-circle mr-2" style="color: #fba540"></i>Active</td>
+                      <td>0</td>
+                     
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-circle mr-2" style="color: #fb4040"></i>Inactive</td>
                       <td>0</td>
                      
                     </tr>
@@ -526,6 +542,8 @@
 <script src="../assets/js/app-script.js"></script>
 <!-- Chart js -->
 <script src="../assets/plugins/Chart.js/Chart.min.js"></script>
+<script src="../assets/plugins/Chart.js/chartjs-script.js"></script>
+
 <!-- Vector map JavaScript -->
 <script src="../assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
 <script src="../assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
