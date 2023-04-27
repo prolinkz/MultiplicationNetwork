@@ -52,14 +52,11 @@ $(function() {
                 borderColor: 'rgba(0, 0, 0, 0.10)',
             },
             series: [{
-                name: 'External Costs',
-                data: [44, 75, 37, 56, 61, 58, 83, 60, 66]
+                name: 'Missed',
+                data: [76, 85, 101, 98, ]
             }, {
-                name: 'Internal Costs',
-                data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-            }, {
-                name: 'Cost Per Hire',
-                data: [20, 41, 26, 46, 30, 50, 12, 53, 41]
+                name: 'Submitted',
+                data: [20, 41, 26, , 12, 53, 41]
             }],
             xaxis: {
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
@@ -68,7 +65,7 @@ $(function() {
                 type: 'gradient',
                 gradient: {
                     shade: 'dark',
-                    gradientToColors: [ '#009efd', '#ff6a00', '#000428'],
+                    gradientToColors: [ '#ff6a00', '#000428'],
                     shadeIntensity: 1,
                     type: 'vertical',
                     opacityFrom: 1,
@@ -76,12 +73,12 @@ $(function() {
                     stops: [0, 100, 100, 100]
                 },
             },
-            colors: ["#2af598", "#ee0979", '#0072ff'],
+            colors: ["#ee0979", '#0072ff'],
             tooltip: {
                 theme: 'dark',
                 y: {
                     formatter: function (val) {
-                        return "$ " + val + " "
+                        return " " + val + " "
                     }
                 }
             },

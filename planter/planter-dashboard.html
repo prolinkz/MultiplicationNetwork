@@ -25,6 +25,8 @@
   <link href="../assets/css/app-style.css" rel="stylesheet"/>
   <!-- skins CSS-->
   <link href="../assets/css/skins.css" rel="stylesheet"/>
+     <!-- Vector CSS -->
+     <link href="../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
   
 </head>
 
@@ -255,26 +257,26 @@
       <div class="row m-15 row-group text-center border-top border-light-3">
         <div class="col-12 col-lg-4">
           <div class="p-3">
-            <h5 class="mb-0" style="color: #1485ef">Project-ID</h5>
-            <small class="mb-0">Deno-Countr-State-City-id</small>
+            <h5 class="mb-2" style="color: #1485ef">Project-ID</h5>
+            <emp class="mb-0">Deno-Countr-State-City-id</emp>
           </div>
         </div>
         <div class="col-12 col-lg-4">
           <div class="p-3">
-            <h5 class="mb-0" style="color: #1485ef">Coordinator</h5>
-            <small class="mb-0">Project coordinator name</small>
+            <h5 class="mb-2" style="color: #1485ef">Coordinator</h5>
+            <emp class="mb-0">Project coordinator name</emp>
           </div>
         </div>
         <div class="col-12 col-lg-4">
           <div class="p-3">
-            <h5 class="mb-0" style="color: #1485ef">Start Date</h5>
-            <small class="mb-0">--</span></small>
+            <h5 class="mb-2" style="color: #1485ef">Start Date</h5>
+            <emp class="mb-0">--</span></emp>
           </div>
         </div>
       </div> <!--End Dashboard 1st row-->
 
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-6 col-xl-6">
           <div class="card">
             <div class="card-header text-uppercase">Line chart</div>
@@ -291,21 +293,21 @@
             </div>
           </div>
         </div>
-      </div><!--End 2nd Row-->
+      </div>-->  <!--End 2nd Row--> 
 
     <!--Section: Minimal statistics cards-->
     <section>
       <div class="row mt-3">
         <div class="col-12 col-lg-12 col-xl-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" style="background-color: #77a9ebb7;">
               <div class="media align-items-center">
-                <div class="w_chart easy-dash-chart3" data-percent="20">
+                <div class="w_chart easy-dash-chart3" data-percent="15">
                   <span class="w_percent"></span>
                 </div>
                 <div class="media-body ml-3">
                   <h6 class="mb-0">Profile</h6>
-                  <span class="badge badge-danger m-1">Complete/Incomplete</span>
+                  <span class="badge badge-danger m-1">Incomplete</span><span class="badge badge-primary m-1">Complete</span>
                   <br/><small> &nbsp;Start Date <span>|</span></small>
                 </div>
                 <i class="fa fa-bell-o fa-2x"></i>
@@ -315,14 +317,15 @@
         </div><!--End Graduation-->
          <div class="col-12 col-lg-6 col-xl-4">
            <div class="card">
-             <div class="card-body">
+             <div class="card-body" style="background-color: #77a9ebb7;">
                <div class="media align-items-center">
                  <div class="w_chart easy-dash-chart2" data-percent="00">
                    <span class="w_percent"></span>
                  </div>
                  <div class="media-body ml-3">
                    <h6 class="mb-0">ABC Reports</h6>
-                   <span class="badge badge-info m-1">Active/Inactive</span>
+                   <span class="badge badge-info m-1">Active</span>  <span class="badge badge-warning m-1">Inactive</span>
+
                    <br/><small><span> &nbsp;Minimum 4 reports required </span></small>
                  </div>
                  <i class="fa fa-eye text-center text-right fa-2x"></i>
@@ -332,14 +335,14 @@
          </div> <!--End ABC report-->
          <div class="col-12 col-lg-6 col-xl-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" style="background-color: #77a9ebb7;">
               <div class="media align-items-center">
                 <div class="w_chart easy-dash-chart1" data-percent="00">
                   <span class="w_percent"></span>
                 </div>
                 <div class="media-body ml-3">
                   <h6 class="mb-0">Graduate</h6>
-                  <span class="badge badge-success m-1">Awaiting/Graduate</span>
+                  <span class="badge badge-secondary m-1">Awaiting</span>  <span class="badge badge-success m-1">Graduate</span>
                   <br/><small><span> &nbsp;Graduation Date | </span></small>
                 </div>
                 <i class="fa fa-graduation-cap text-DBHD text-right fa-2x"></i>
@@ -348,51 +351,77 @@
           </div>
         </div><!--End Profile-->
       </div><!--End profile Row-->
-    </section>   
-
-<section>
+    </section>  
     
-  
-  <div class="row">
-
-  <div class="col-12 col-lg-4 col-xl-4">
-     <div class="card">
-        <div class="card-header">Result
-          
-        <div class="card-body">
-           <div class="chart-container-2">
-              <canvas id="chart2"></canvas>
-           </div>
-        </div>
-        <div class="table-responsive">
-          <table class="table align-items-center">
-            <tbody>
-              <tr>
-                <td><i class="fa fa-circle mr-2" style="color: #14abef"></i> Contacts</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td><i class="fa fa-circle mr-2" style="color: #02ba5a"></i>Conversion</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td><i class="fa fa-circle mr-2" style="color: #d13adf"></i>Baptized</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td><i class="fa fa-circle mr-2" style="color: #fba540"></i>Leaders</td>
-                <td>0</td>
-               
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <div class="row">
+      <div class="col-12 col-lg-8 col-xl-7">
+        <div class="card">
+         <div class="card-header text-uppercase" style="background-color: burlywood;">Monthly ABC Report</div>
+         <div class="card-body">
+            <div class="chart-container">
+               <div id="recruitment-cost"></div>
+            </div>
+         </div>
+       </div>
       </div>
-  </div>
-  </div>
- </div><!--End Results Row-->
+      <div class="col-12 col-lg-5 col-xl-5">
+        <div class="card">
+         <div class="card-header text-uppercase" style="background-color: burlywood;">Monthly Goal and Result</div>
+         <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-simple-tables justify-content-center">
+              <tbody>
+                <tr>
+                  <th style="width: fit-content;"></th>
+                  <th class="justify-content-around">Goal</th>
+                  <th>Result</th>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-circle mr-2" style="color: #14abef"></i> Contacts</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-circle mr-2" style="color: #02ba5a"></i>Conversion</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-circle mr-2" style="color: #d13adf"></i>Baptized</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-circle mr-2" style="color: #fba540"></i>Leaders</td>
+                  <td>0</td>
+                  <td>0</td>
+                 
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card" style="background-color: antiquewhite;">
+            <div class="card-body">
+              <div class="media align-items-center">
+              <div class="media-body">
+               <h3 class="mt-3 mb-0">34</h3>
+                 <p class="mb-0">Average Percentage</p>
+              </div>
+                <div class="card-content dash-array-chart-box">
+                 <div id="assignments"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+      </div>
 
-</section>
+      
+    </div><!--end row-->
+
+
+
 
    
 <section>
@@ -582,6 +611,9 @@
 <!-- Chart js -->
 <script src="../assets/plugins/Chart.js/Chart.min.js"></script>
 <script src="../assets/plugins/Chart.js/chartjs-script.js"></script>
+  <!-- Apex Chart JS -->
+  <script src="../assets/plugins/apexcharts/apexcharts.js"></script>
+  <script src="../assets/js/dashboard-human-resources.js"></script>
 
 <!-- Vector map JavaScript -->
 <script src="../assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
@@ -593,7 +625,7 @@
 <script src="../assets/plugins/jquery-knob/excanvas.js"></script>
 <script src="../assets/plugins/jquery-knob/jquery.knob.js"></script>
 <!-- Custom scripts -->
-<script src="../assets/js/dashboard-logistics.js"></script>
+<script src="assets/js/dashboard-logistics.js"></script>
 
 <script>
     $(function() {
