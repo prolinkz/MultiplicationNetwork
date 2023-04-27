@@ -10,8 +10,6 @@
   <title>Church Planter Profile</title>
   <!--favicon-->
   <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/x-icon">
-      <!--Select Plugins-->
-      <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
   <!-- simplebar CSS-->
   <link href="../assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
@@ -26,6 +24,10 @@
   <link href="../assets/css/app-style.css" rel="stylesheet"/>
   <!-- skins CSS-->
   <link href="../assets/css/skins.css" rel="stylesheet"/>
+        <!--Select Plugins_ select2 for dropdown-->
+        <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
+                <!--Select Datepicker Plugins-->
+        <link href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
 
 
   
@@ -43,7 +45,7 @@
    <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
     <div class="brand-logo">
-     <a href="index-2.html">
+     <a href="planter-profile.html">
       <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
       <h5 class="logo-text">Planter Profile</h5>
     </a>
@@ -309,24 +311,25 @@
                     <fieldset class="border p-2">
                         <legend  class="w-auto text-uppercase"><small>Profile</small> </legend>
                         <div class="row">
-                            <div class="col form-group float">
+                            <div class="col form-group">
                                 <div class="card-body">
                                     <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline">
                                             <input class="form-control" type="text" required="" id="surname" placeholder="Enter SurName">
                                             <label class="form-label" for="surname">SurName</label>
                                         </div>
-                                    </div><!---->
+                                    </div><!--End Sur Name-->
+
                                     <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline">
                                           <input class="form-control" type="text" required="" id="givenname" placeholder="Enter Given Name">
                                           <label class="form-label" for="givenname">Given Name</label>
                                         </div>
-                                    </div><!---->
+                                    </div><!--End Given Name-->
                                     
-                                    <div class="col col-sm-12 col-md-4 xl-4 mb-3 form-group float-left">
-                                      <!-- <div class="icheck-material-primary icheck-inline">
-                                        <input type="radio" id="inline-radio-primary" name="gender" checked/>
+                                    <div class="col-sm-12 col-md-4 xl-4 mb-3 form-group float-left">
+                                      <div class="icheck-material-primary icheck-inline">
+                                        <input type="radio" id="inline-radio-primary" name="gender"/>
                                         <label for="inline-radio-primary">Male</label>
                                       </div>
                                       <div class="icheck-material-info icheck-inline">
@@ -336,26 +339,17 @@
                                       <div class="icheck-material-success icheck-inline">
                                         <input type="radio" id="inline-radio-success" name="gender"/>
                                         <label for="inline-radio-success">X-gender</label>
-                                      </div><br> -->
+                                      </div>
+                                <label class="form-label select-label mt-1" for="gender">Gender</label>&nbsp;&nbsp;<small>Select your gender</small>
 
-                                        <select class="form-control single-select">
-                                            <option selected>Select Gender</option>
-                                            <option value="0"><small>Male</small></option>                                    
-                                            <option value="1"><small>Female</small></option>
-                                            <option value="2"><small>Transgender</small></option>
-                                        </select>
-                                        <label class="form-label select-label" for="gender">Gender</label>
-
-                                    </div><!---->
+                                    </div><!--Gender-->
                                     
-                                    <div class="col-sm-12 col-md-4 mb-3 float-left">
+                                    <div class="form-group col-sm-12 col-md-4 mb-3 float-right">
                                         <div class="form-outline datepicker">
-                                          <label class="form-label select-label" for="dob">Dat of birth</label>
-                                            <input class="form-control"  type="date" id="dob" name="dob" required="" aria-haspopup="dialog">
-                                            <label class="form-label" for="dob">Date of Birth</label>
+                                            <input class="form-control required" type="date" id="dob" name="dob">
+                                            <label class="form-label select-label" for="dob">Dat of birth</label>
                                             <div class="invalid-feedback">Invalid date or date format</div>
                                         </div>
-                                      </div>
                                     </div><!--End dob end-->      
                                     <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
                                         <select class="form-control single-select">
@@ -369,77 +363,98 @@
                                     </div><!--End Marital Status--> 
         
         
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="form-outline">
-                                        <input class="form-control" type="number" required="" id="childerns" placeholder="Number of Childeren's">
-                                        <label class="form-label" for="childerns">No. of Children's</label>
-                                    </div>
-                                </div><!---->
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="form-outline">
-                                        <input class="form-control" type="text" required="" id="phone" placeholder="Enter your phone number">
-                                        <label class="form-label" for="phone">Phone#</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="form-outline">
-                                        <input class="form-control" type="text" required="" id="whatsapp" placeholder="Enter your Whatsapp number">
-                                        <label class="form-label" for="whatsapp">WhatssApp Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="form-outline">
-                                        <input class="form-control" type="number" required="" id="age">
-                                        <label class="form-label" for="age">Age</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="select-wrapper">
+                                    <div class="col-sm-12 col-md-4 mb-3 float-right">
                                         <div class="form-outline">
-                                            <input class="form-control active select-input" placeholder="Country" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="country">
-                                            <label class="form-label select-label" for="country">Country</label>
+                                            <input class="form-control" type="number" required="" id="childerns" placeholder="Number of Childeren's">
+                                            <label class="form-label" for="childerns">No. of Children's</label>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="select-wrapper">
+                                    </div><!--End # of Childerns-->
+                                    <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline">
-                                            <input class="form-control hidd" placeholder="No options available" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="State">
-                                            <label class="form-label select-label" for="state">State</label>
+                                            <input class="form-control" type="text" required="" id="phone" placeholder="Enter your phone number">
+                                            <label class="form-label" for="phone">Phone#</label>
                                         </div>
-                                    </div>
-                                </div><!---->
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                    <div class="select-wrapper">
+                                    </div> <!--End Phone--> 
+                                    <div class="col-sm-12 col-md-4 mb-3 float-left">
                                         <div class="form-outline">
-                                            <input class="form-control hidd" placeholder="No options available" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="city">
-                                            <label class="form-label select-label" for="city">city</label>
+                                            <input class="form-control" type="text" required="" id="whatsapp" placeholder="Enter your Whatsapp number">
+                                            <label class="form-label" for="whatsapp">WhatssApp Number</label>
                                         </div>
-                                    </div>
-                                </div><!---->
-                                <div class="col-sm-12 col-md-4 mb-3 float-left">
-                                  <div class="select-wrapper">
+                                    </div> <!--End Whatsapp--> 
+                                    <div class="col-sm-12 col-md-4 mb-3 float-left">
+                                        <div class="form-outline">
+                                            <input class="form-control" type="number" required="" id="age" disabled/>
+                                            <label class="form-label" for="age">Age</label>
+                                        </div>
+                                    </div> <!--End Age--> 
+                                    <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                      <select class="form-control required single-select">
+                                          <option default>Select Country</option>
+                                          <option value="0">USA</option>                                    
+                                          <option value="1">Canada</option>
+                                          <option value="2">Spain</option>
+                                          <option value="2">Germany</option>
+                                      </select>
+                                      <label class="form-label select-label" for="churchcountry">Country</label>
+             
+                                        <!-- <div class="col-sm-12 col-md-4 mb-3">
+                                        <div class="form-outline"><input class="form-control" type="text" id="cpcountry"><label
+                                                class="form-label" for="cpcountry">Country</label>
+                                        </div> -->
+                                    </div><!--End Church Country-->
+                                    <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                      <select class="form-control required single-select">
+                                          <option default>Select State</option>
+                                          <option value="0">1</option>                                    
+                                          <option value="1">2</option>
+                                          <option value="2">3</option>
+                                          <option value="2">4</option>
+                                      </select>
+                                      <label class="form-label select-label" for="churchstate">State</label>
+            
+                                    </div> <!--End church State-->
+                                    <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                      <select class="form-control required single-select">
+                                          <option default>Select State</option>
+                                          <option value="0">1</option>                                    
+                                          <option value="1">2</option>
+                                          <option value="2">3</option>
+                                          <option value="2">4</option>
+                                      </select>
+                                      <label class="form-label select-label" for="cpstate">District</label>
+            
+                                    </div> <!--End church District-->
+            
+                                    <div class="col-sm-12 col-md-4 mb-3 float-left">
+                                        <div class="form-outline">
+                                          <input class="form-control required" type="text" id="cpcity" placeholder="Your City">
+                                          <label class="form-label" for="cpcity">City</label>
+                                        </div>
+                                    </div><!--End Church City-->
+                                    <div class="col-sm-12 col-md-8 mb-3 float-left">
                                       <div class="form-outline">
-                                              <textarea rows="2" class="form-control" id="basic-textarea"></textarea>
-                                              <label for="basic-textarea" class="col col-form-label">Mailing/Postal Address</label>
+                                        <input class="form-control required" type="text" id="cpaddress" placeholder="Your Mailing/Postal Address">
+                                        <label class="form-label" for="cpaddress">Mailing/Postal Address</label>
                                       </div>
-                                  </div>
-                              </div><!---->
+                                      <!-- <div class="select-wrapper">
+                                          <div class="form-outline">
+                                                  <textarea rows="2" class="form-control" id="basic-textarea"></textarea>
+                                                  <label for="basic-textarea" class="col col-form-label">Mailing/Postal Address</label>
+                                          </div>
+                                      </div> -->
+                                  </div><!--Address-->
 
                                 </div>   
                             </div>
                             </div>
                     </fieldset>
                 </div>
-        
-
-				
-		     </form>
-			  
+                </div>
+                </form>
              </div>
-           </div>
-        </div>
-    </div><!--End Row - Personal Info-->
+           </div> <!--End Church Planter Card-->
+        </div> <!--End col-->
+    </div><!--End Row - Church Planter Personal Info-->
 
     <div class="row">
         <div class="col-lg-12">
@@ -491,8 +506,8 @@
                                       <div class="col-sm-12 col-md-4 mb-3 float-left">
                                           <div class="select-wrapper">
                                               <div class="form-outline">
-                                                  <input class="form-control hidd" placeholder="No options available" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="city">
-                                                  <label class="form-label select-label" for="city">city</label>
+                                                  <input class="form-control hidd" placeholder="No options available" aria-disabled="false" aria-expanded="false" aria-required="false" role="combobox" tabindex="0" aria-haspopup="true" readonly="" id="churchdistt">
+                                                  <label class="form-label select-label" for="churchdistt">District</label>
                                               </div>
                                           </div>
                                       </div><!---->
@@ -658,7 +673,7 @@
                                     </div>
                                   </div>
                                 </div><!--End Modal -->
-                    </div>
+                    </div> <!--End Submit button col-->
 
 <!--start overlay-->
 	  <div class="overlay toggle-menu"></div>
@@ -751,6 +766,16 @@
     });
 
 </script>
+
+    <!--Bootstrap Datepicker Js-->
+    <script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script>
+      $('#default-datepicker').datepicker({
+        todayHighlight: true
+      });
+
+
+    </script>
 </body>
 
 </html>
