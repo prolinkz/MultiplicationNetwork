@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>User profile</title>
+  <title>Users</title>
   <!--favicon-->
-  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/x-icon">
   <!-- simplebar CSS-->
   <link href="../assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!--Data Tables -->
+  <link href="../assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <link href="../assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
   <!-- animate CSS-->
   <link href="../assets/css/animate.css" rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
@@ -24,6 +27,8 @@
   <link href="../assets/css/app-style.css" rel="stylesheet"/>
   <!-- skins CSS-->
   <link href="../assets/css/skins.css" rel="stylesheet"/>
+
+
   
 </head>
 
@@ -213,133 +218,94 @@
 
 <div class="clearfix"></div>
 	
+  <!--Start content-wrapper-->
+
   <div class="content-wrapper">
     <div class="container-fluid">
-
-
-      <div class="row">
-        <div class="col-lg-4">
-           <div class="card profile-card-2">
-            <div class="card-img-block">
-                <img class="img-fluid justify-content-around pl-4" src="../assets/images/Multiplication Network Logo.png" alt="Card image cap" style="height: 65px; margin: 25px; position:absolute;">
+        <!-- Breadcrumb-->
+        <div class="row pt-2 pb-2">
+            <div class="col-9">
+                <h4 class="page-title"> Users</h4>
+             </div>
+             <div class="btn-group justify-content-end">
+              <button type="button" class="btn btn-info waves-effect px-6">
+                <a href="permission.html" style="color: aliceblue;">+ Add New User</a></button>
             </div>
-            <div class="card-body pt-5">
-                <img src="../assets/images/avatars/avatar-2.png" alt="profile-image" class="profile" style="position:absolute;">
-                <h5 class="card-title">Mark Stern</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+        </div>
+        <!-- End Breadcrumb-->
 
-            <div class="card-body border-top border-light" style="background-color: rgb(39, 39, 63);">
+      <!--Start Dashboard Content-->
+
+    <!--Section: Minimal statistics cards-->
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header"><i class="fa fa-table"></i> All Users
+              <span></span>
+             
+          </div>
+          <div class="card-body pl-4 pr-4">
+            <div class="table-responsive">
+            <table id="projects" class="table table-hover text-center">
+              <thead>
+                  <tr>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Role</th>
+                      <th>Signup Date</th>
+                      <th>Parent</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
                   
-            </div>
-        </div>
-
-        </div>
-
-        <div class="col-lg-8">
-           <div class="card">
-            <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
-                <li class="nav-item">
-                    <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Profile</span></a>
-                </li>
-            </ul>
-            <div class="tab-content p-3">
-                <div class="tab-pane active" id="profile">
-                    <h5 class="mb-3">User Profile</h5>
-                   
-                    <!--/row-->
-                </div>
-                
-                <form>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">First name</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="text" value="Mark">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Last name</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="text" value="Jhonsan">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Email</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="email" name="email" value="">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Change profile</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="file">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Phone No.</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="tel" id="phone_num" name="phone_num" value="" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"
-                          />
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Address</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="text" value="" placeholder="Street">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label"></label>
-                      <div class="col-lg-5">
-                          <input class="form-control" type="text" value="" placeholder="City">
-                      </div>
-                      <div class="col-lg-4">
-                          <input class="form-control" type="text" value="" placeholder="State">
-                      </div>
-                  </div>
-                 
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label"></label>
-                      <div class="col-lg-5">
-                          <input class="form-control" type="text" value="" placeholder="District/Zone">
-                      </div>
-                      <div class="col-lg-4">
-                        <input class="form-control" type="text" value="" placeholder="Country">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Password</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="password" value="11111122333">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
-                      <div class="col-lg-9">
-                          <input class="form-control" type="password" value="11111122333">
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label"></label>
-                      <div class="col-lg-9">
-                          <input type="reset" class="btn btn-secondary" value="Cancel">
-                          <input type="button" class="btn btn-primary" value="Save Changes">
-                      </div>
-                  </div>
-              </form>
-            </div>
+                  <tr>
+                      <td></td>
+                      <td>NAme  <br/><small>userEmail Address</small> </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Eman  <br/><small>userEmail Address</small> </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                        
+              </tbody>
+              <tfoot>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Signup Date</th>
+                    <th>Parent</th>
+                    <th>Action</th>
+                  </tr>
+              </tfoot>
+          </table>
+          </div>
+          </div>
         </div>
       </div>
-      </div>
-        
-    </div>
+    </div><!-- End Row-->  
+
+</div>
+
+
 <!--start overlay-->
 		  <div class="overlay toggle-menu"></div>
 		<!--end overlay-->
     </div>
     <!-- End container-fluid-->
-   </div><!--End content-wrapper-->
+   </div> 
+   <!--End content-wrapper-->
+
    <!--Start Back To Top Button-->
     <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
     <!--End Back To Top Button-->
@@ -348,11 +314,10 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © 2019 Multiplication Network
+          Copyright © 2023 Multiplication Network
         </div>
       </div>
-    </footer>
-	<!--End footer-->
+    </footer> <!--End footer-->
 	
 	<!--start color switcher-->
    <div class="right-sidebar">
@@ -395,24 +360,57 @@
       </ul>
       
      </div>
-   </div>
-  <!--end color switcher-->
+   </div>  <!--end color switcher-->
    
-  </div><!--End wrapper-->
+</div><!--End wrapper-->
 
 
   <!-- Bootstrap core JavaScript-->
-  <script src="../assets/js/jquery.min.js"></script>
-  <script src="../assets/js/popper.min.js"></script>
-  <script src="../assets/js/bootstrap.min.js"></script>
-	
-  <!-- simplebar js -->
-  <script src="../assets/plugins/simplebar/js/simplebar.js"></script>
-  <!-- sidebar-menu js -->
-  <script src="../assets/js/sidebar-menu.js"></script>
-  
-  <!-- Custom scripts -->
-  <script src="../assets/js/app-script.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+
+<!-- simplebar js -->
+<script src="../assets/plugins/simplebar/js/simplebar.js"></script>
+<!-- sidebar-menu js -->
+<script src="../assets/js/sidebar-menu.js"></script>
+<!-- loader scripts -->
+<script src="../assets/js/jquery.loading-indicator.html"></script>
+<!-- Custom scripts -->
+<script src="../assets/js/app-script.js"></script>
+
+<!--Data Tables js-->
+<script src="../assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/jszip.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/pdfmake.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/vfs_fonts.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
+
+<!--Data table script-->
+  <script>
+    $(document).ready(function() {
+     //Default data table
+      $('#default-datatable').DataTable();
+ 
+ 
+      var table = $('#projects').DataTable( {
+       lengthChange: false,
+       buttons: [ 'copy', 'excel', 'pdf', 'print', 'colvis' ]
+     } );
+ 
+    table.buttons().container()
+       .appendTo( '#projects_wrapper .col-md-6:eq(0)' );
+     
+     } );
+ 
+   </script>
+
+
 	
 </body>
 
