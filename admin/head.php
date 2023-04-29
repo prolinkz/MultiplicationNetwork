@@ -193,21 +193,6 @@
         </ul>
        </li>
      
-      <!-- <li>
-        <a href="javaScript:void();" class="waves-effect">
-          <i class="zmdi zmdi-collection-folder-image"></i> <span>Sample Pages</span>
-          <i class="fa fa-angle-left float-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-              <li><a href="pages-invoice.html"><i class="zmdi zmdi-dot-circle-alt"></i> Invoice</a></li>
-          <li><a href="pages-user-profile.html"><i class="zmdi zmdi-dot-circle-alt"></i> User Profile</a></li>
-          <li><a href="pages-blank-page.html"><i class="zmdi zmdi-dot-circle-alt"></i> Blank Page</a></li>
-              <li><a href="pages-coming-soon.html"><i class="zmdi zmdi-dot-circle-alt"></i> Coming Soon</a></li>
-          <li><a href="pages-403.html"><i class="zmdi zmdi-dot-circle-alt"></i> 403 Error</a></li>
-          <li><a href="pages-404.html"><i class="zmdi zmdi-dot-circle-alt"></i> 404 Error</a></li>
-          <li><a href="pages-500.html"><i class="zmdi zmdi-dot-circle-alt"></i> 500 Error</a></li>
-        </ul>
-       </li> -->
 
       <li class="sidebar-header">LABELS</li>
       <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>

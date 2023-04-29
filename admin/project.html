@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Admin Dashboard</title>
+  <title>Add Project</title>
   <!--favicon-->
   <link rel="icon" href="../assets/images/favicon-16x16.png" type="image/x-icon">
    <!-- Vector CSS -->
@@ -26,6 +26,8 @@
   <link href="../assets/css/app-style.css" rel="stylesheet"/>
   <!-- skins CSS-->
   <link href="../assets/css/skins.css" rel="stylesheet"/>
+          <!--Select Plugins-->
+          <link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
 
 
   
@@ -45,7 +47,7 @@
      <div class="brand-logo">
       <a href="../index.html">
        <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Admin Profile</h5>
+       <h5 class="logo-text">Add New Project</h5>
      </a>
    </div>
    <div class="user-details">
@@ -77,7 +79,7 @@
         </a>       
       </li>
       <li>
-        <a href="../planters.html" class="waves-effect">
+        <a href="planters.html" class="waves-effect">
           <i class="zmdi zmdi-chart"></i> <span>Planters</span>
         </a> 
       </li>
@@ -98,9 +100,9 @@
           <i class="fa fa-angle-left float-right"></i>
         </a>
         <ul class="sidebar-submenu">
-          <li><a href="#"><i class="zmdi zmdi-accounts"></i> Coordinator</a></li>
-          <li><a href="programs.html"><i class="zmdi zmdi-chart-donut"></i> Programs</a></li>
-          <li><a href="#"><i class="zmdi zmdi-map"></i> Denomination</a></li>
+          <li><a href="#" target="_blank"><i class="zmdi zmdi-accounts"></i> Coordinator</a></li>
+          <li><a href="#" target="_blank"><i class="zmdi zmdi-chart-donut"></i> Programs</a></li>
+          <li><a href="#" target="_blank"><i class="zmdi zmdi-map"></i> Denomination</a></li>
         </ul>
        </li>
 
@@ -205,6 +207,10 @@
           </a>
         </li>
         <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
+        <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
       </ul>
     </li>
@@ -220,133 +226,119 @@
   <div class="content-wrapper">
     <div class="container-fluid">
 
-      <!--Start Dashboard Content-->
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                 <div class="card-header text-uppercase text-white" style="background-color: rgb(43, 103, 216);">Add New Project</div>
+                 <div class="card-body">
+                    <form>
+            
+                 
+                    <div class="row mt-2">
+                    <div class="col-12 md-6 pb-2">
+                        <fieldset class="border p-2">
+                            <legend  class="w-auto text-uppercase"><small>Project Detail</small> </legend>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <div class="card-body">
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                            <select class="form-control single-select">
+                                                <option selected>Select Coordinator</option>
+                                                <option value="0">NAme1</option>                                    
+                                                <option value="1">Name2</option>
+                                                <option value="2">Name3</option>
+                                            </select>
+                                            <label class="form-label select-label" for="coordinator">Coordinator</label>
+                                        </div><!--End Coordinator--> 
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                            <select class="form-control single-select">
+                                                <option selected>Select Program</option>
+                                                <option value="0">NAme1</option>                                    
+                                                <option value="1">Name2</option>
+                                                <option value="2">Name3</option>
+                                            </select>
+                                            <label class="form-label select-label" for="program">Program</label>
+                                        </div><!--End Program--> 
 
-      <div class="row mt-3">
-        <div class="col-12 col-lg-6 col-xl-3">
-          <div class="card gradient-deepblue">
-            <div class="card-body">
-               <h5 class="text-white mb-0">9526 <span class="float-right"><i class="fa fa-user-circle"></i></span></h5>
-                 <div class="progress my-3" style="height:3px;">
-                    <div class="progress-bar" style="width:55%"></div>
+                                        
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-right">
+                                            <div class="form-outline datepicker">
+                                                <input class="form-control required" type="date" id="startdate" name="startdate">
+                                                <label class="form-label select-label" for="startdate">Start Date</label>
+                                                <div class="invalid-feedback">Invalid date or date format</div>
+                                            </div>
+                                        </div><!--End start date -->      
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                            <select class="form-control single-select" name="denomination">
+                                                <option selected>Select Denominaton</option>
+                                                <option value="0">Deno1</option>                                    
+                                                <option value="1">Deno2</option>
+                                                <option value="2">Deno3</option>
+                                            </select>
+                                            <label class="form-label select-label" for="denomination">Denomination</label>
+                                        </div><!--End Program--> 
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                          <select class="form-control required single-select">
+                                              <option default>Select Country</option>
+                                              <option value="0">USA</option>                                    
+                                              <option value="1">Canada</option>
+                                              <option value="2">Spain</option>
+                                              <option value="2">Germany</option>
+                                          </select>
+                                          <label class="form-label select-label" for="projectcountry">Country</label>
+                                        </div><!--End project Country-->
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                          <select class="form-control required single-select">
+                                              <option default>Select State</option>
+                                              <option value="0">1</option>                                    
+                                              <option value="1">2</option>
+                                              <option value="2">3</option>
+                                              <option value="2">4</option>
+                                          </select>
+                                          <label class="form-label select-label" for="projectstate">State</label>               
+                                        </div> <!--End project State-->
+                                        <div class="form-group col-sm-12 col-md-4 mb-3 float-left">
+                                          <select class="form-control required single-select">
+                                              <option default>Select District</option>
+                                              <option value="0">1</option>                                    
+                                              <option value="1">2</option>
+                                              <option value="2">3</option>
+                                              <option value="3">4</option>
+                                          </select>
+                                          <label class="form-label select-label" for="projectdistt">District</label>
+                                        </div> <!--End project District-->
+                                        <div class="form-group col-sm-12 col-md-8 mb-3 float-left">
+                                            <div class="form-outline">
+                                              <input class="required form-control" type="text" id="projectcity" placeholder="Enter Project City ">
+                                              <label class="form-label" for="projectcity">City</label>
+                                            </div>
+                                        </div><!--End Project Address-->
+                                        
+                                        <!--Start Submission Buttons-->
+<div class="row mb-4 mt-3 justify-content-end">
+    <div class="col-sm-12 col-md-8 lg-6 btn-group float-right mr-3 mt-4">
+        <button type="button" role="button" class="btn btn-danger waves-effect px-3 mt-2">Cancel</button> &nbsp;&nbsp;
+        <button type="button" role="button" class="btn btn-info waves-effect px-5 mt-2">Add</button>
+
+    </div>
+</div>
+
+
+
+
+                                    </div>   
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    </div>
+                    </form>
                  </div>
-               <p class="mb-0 text-white small-font">Total  <span class="float-right">+4.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-             </div>
-          </div> 
-        </div>
-        <div class="col-12 col-lg-6 col-xl-3">
-          <div class="card gradient-orange">
-            <div class="card-body">
-               <h5 class="text-white mb-0">8323 <span class="float-right"><i class="fa fa-bar-chart"></i></span></h5>
-                 <div class="progress my-3" style="height:3px;">
-                    <div class="progress-bar" style="width:55%"></div>
-                 </div>
-               <p class="mb-0 text-white small-font">Total  <span class="float-right">+1.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-             </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-3">
-          <div class="card gradient-ohhappiness">
-             <div class="card-body">
-               <h5 class="text-white mb-0">6200 <span class="float-right"><i class="fa fa-graduation-cap"></i></span></h5>
-                 <div class="progress my-3" style="height:3px;">
-                    <div class="progress-bar" style="width:55%"></div>
-                 </div>
-               <p class="mb-0 text-white small-font">Graduated <span class="float-right">+5.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-             </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 col-xl-3">
-          <div class="card gradient-ibiza">
-             <div class="card-body">
-               <h5 class="text-white mb-0">5630 <span class="float-right"><i class="fa fa-eye"></i></span></h5>
-                 <div class="progress my-3" style="height:3px;">
-                    <div class="progress-bar" style="width:55%"></div>
-                 </div>
-               <p class="mb-0 text-white small-font">Inactive <span class="float-right">+2.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-             </div>
-          </div>
-        </div>
-      </div><!--End Row-->
+               </div> <!--End Church Planter Card-->
+            </div> <!--End col-->
+        </div><!--End Row - Church Planter Personal Info-->
     
-  
-        <div class="row">
-          <div class="col-12 col-lg-8 col-xl-8">
-            <div class="card">
-              <div class="card-header">ABC Report's status </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="card">
-                      <div class="card-header text-uppercase">Line chart</div>
-                    <div class="card-body">
-                          <canvas id="lineChart"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-xl-6">
-                    <div class="card">
-                      <div class="card-header text-uppercase">Bar Chart</div>
-                      <div class="card-body">
-                        <canvas id="barChart"></canvas>
-                      </div>
-                    </div>
-                  </div>
-                </div> <!--End Row-->
 
-              </div>  <!--End Card body-->
-                          
-            </div>   <!--End card ABC report status-->
-          </div>      <!--End col-->
-        
-          <div class="col-12 col-lg-4 col-xl-4">
-            <div class="card">
-              <div class="card-header mt-3">Overall Result
-                <div class="table-responsive mt-4">
-                  <table class="table align-items-center">
-                    <tbody>
-                      <tr>
-                        <td><i class="fa fa-circle mr-2" style="color: #14abef"></i> Planter's</td>
-                        <td>0</td>
-                      </tr>
-                      <tr>
-                        <td><i class="fa fa-circle mr-2" style="color: #02ba5a"></i>Completed Profile</td>
-                        <td>0</td>
-                      </tr>
-                      <tr>
-                        <td><i class="fa fa-circle mr-2" style="color: #fba540"></i>Active CP's</td>
-                        <td>0</td>
-                      
-                      </tr>
-                      <tr>
-                        <td><i class="fa fa-circle mr-2" style="color: #fb4040"></i>Inactive CP's</td>
-                        <td>0</td>    
-                      </tr>
-                      <tr>
-                        <td><i class="fa fa-circle mr-2" style="color: #d13adf"></i>Graduated</td>
-                        <td>0</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>  <!--End Card header - Result-->
-            </div>  <!--End Card - Result-->
-          </div>  <!--End Col - Result-->
-        </div> <!--End Row-->
-
-        <div class="row">
-          <div class="col-12 col-lg-8 col-md6">
-            <div class="card">
-              <div class="card-header text-uppercase">Column Chart</div>
-           <div class="card-body">
-             <div id="chart3"></div>
-           </div>  
-            </div>
-          </div>
-        </div>
-      
-
-      
     <!-- End container-fluid-->
    </div> 
    <!--End content-wrapper-->
@@ -409,7 +401,7 @@
    </div>
   <!--end color switcher-->
    
-  </div><!--End wrapper-->
+  </div><!--End Content wrapper-->
 
 
   <!-- Bootstrap core JavaScript-->
@@ -443,6 +435,18 @@
   <!-- Apex Chart JS -->
   <script src="../assets/plugins/apexcharts/apexcharts.js"></script>
   <script src="../assets/plugins/apexcharts/apex-custom-script.js"></script>
+
+          <!--Select Plugins Js-->
+          <script src="../assets/plugins/select2/js/select2.min.js"></script>
+          <script>
+            $(document).ready(function() {
+                $('.single-select').select2();
+          
+                $('.multiple-select').select2();
+            });
+        
+        </script>
+
 <script>
     $(function() {
         $(".knob").knob();
