@@ -228,8 +228,50 @@
                 <h4 class="page-title"> Users</h4>
              </div>
              <div class="btn-group justify-content-end">
-              <button type="button" class="btn btn-info waves-effect px-6">
-                <a href="permission.html" style="color: aliceblue;">+ Add New User</a></button>
+              <!-- <button type="button" class="btn btn-info waves-effect px-6">
+                <a href="user.html" style="color: aliceblue;">+ Add New User</a></button> -->
+
+              
+                  <!-- Large Size Modal -->
+                       <button class="btn btn-primary btn-block m-1" data-toggle="modal" data-target="#formemodal">Add New User</button>
+                       <!-- Modal -->
+                         <div class="modal fade" id="formemodal">
+                           <div class="modal-dialog">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title">Add New User</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                                 </button>
+                               </div>
+                               <div class="modal-body">
+                                   <form>
+                                      <div class="form-group">
+                                        <label for="userName">User Name</label>
+                                        <input type="text" class="form-control required" id="userName" placeholder="Enter User Name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="email">User Email</label>
+                                        <input type="text" class="form-control email required" id="email" placeholder="Enter User Email Address">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="enterPassword">Password</label>
+                                        <input type="text" class="form-control required" id="enterPassword" placeholder="Enter Password">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="confirmPassword">Confirm Password</label>
+                                        <input type="text" class="form-control required" id="confirmPassword" placeholder="Confirm Password">
+                                      </div>
+
+                                      <div class="form-group">
+                                       <button type="submit" class="btn btn-primary px-5 float-right"><i class="icon-lock"></i> Login</button>
+                                     </div>
+                                 </form>
+                               </div>
+                             </div>
+                           </div>
+                         </div> <!--End Modal Form-->
+
             </div>
         </div>
         <!-- End Breadcrumb-->
